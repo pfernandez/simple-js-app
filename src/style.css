@@ -1,0 +1,13 @@
+body {
+  background: #e0e0e0;
+  font-family: Helvetica, sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+h1 {
+  color: #222;
+}

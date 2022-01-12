@@ -1,0 +1,43 @@
+{
+  "name": "simple-js-app",
+  "version": "0.0.1",
+  "description": "A simple JavaScript starter app",
+  "author": "Paul Fernandez",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "javascript"
+  ],
+  "homepage": "https://github.com/pfernandez/simple-js-app",
+  "bugs": {
+    "url": "https://github.com/pfernandez/simple-js-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfernandez/simple-js-app.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --ignore src",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "test-watch": "jest --coverage --watchAll"
+  },
+  "devDependencies": {
+    "express": "^4.17.2",
+    "jest": "^27.4.7",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "prettier": {
+    "semi": false,
+    "arrowParens": "avoid"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**"
+    ]
+  }
+}
